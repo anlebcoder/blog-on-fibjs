@@ -1,0 +1,5 @@
+DROP TABLE IF EXISTS 'blog';
+CREATE TABLE blog (id INTEGER PRIMARY KEY autoincrement,value MEDIUMTEXT);
+
+DROP TABLE IF EXISTS 'tags';
+CREATE TABLE tags (blogid INTEGER,tag VARCHAR(32),PRIMARY KEY(blogid,tag));
